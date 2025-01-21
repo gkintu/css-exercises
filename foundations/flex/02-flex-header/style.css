@@ -23,12 +23,13 @@ ul {
   list-style-type: none;
   display: flex;
   padding: 10px;
-  
 }
 
 li {
   margin: 0 5px;
 }
+
+
 
 a {
   font-size: 22px;
