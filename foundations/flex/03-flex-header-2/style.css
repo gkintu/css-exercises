@@ -18,13 +18,11 @@ body {
   padding: 8px;
 }
 
-.div-a {
-  display: flex;
- 
-}
 
+.div-a,
 .div-b {
   display: flex;
+  align-items:center;
   gap: 8px
 }
 .profile-image {
