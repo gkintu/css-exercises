@@ -17,6 +17,11 @@ box-sizing: border-box;
   --qoute-text-color: #1f2937;
 }
 
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -40,6 +45,41 @@ a {
     padding: 5rem 12rem;
     gap: 30px;
     flex-wrap: wrap;
+    color: var(--header-text-color);
     justify-content: space-between;
     background-color: var(--background-color);
 }   
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.hero-header-text {
+  font-size: 48px;
+  font-weight:900;
+}
+
+.paragraph.hero.hero {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: var(--header-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
