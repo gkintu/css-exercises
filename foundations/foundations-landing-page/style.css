@@ -76,7 +76,7 @@ input {
   padding: 5px 10px;
 }
 
-button {
+button, input[type="submit"] {
   padding: 10px 20px;
   background-color: var(--button-color);
   color: var(--header-text-color);
@@ -129,8 +129,79 @@ button {
     object-fit: cover;
 }
 
+.qoute-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-style: italic;
+    background-color: var(--qoute-background-color);
+    color: var(--qoute-text-color);
+}
+
+blockquote {
+    width:80%;
+    padding : 6rem 12rem;
+}
+
+cite {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width:100%;
+   padding: 3rem 12rem; 
+  color: var(--background-color);
+  background-color: var(--header-text-color);
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+ width:640px;
+}
+
+.cta-header {
+  font-size: 24px;
+  font-weight:bold;
+  
+}
+
+.cta-paragraph {
+  font-size: 18px;
+  margin-bottom: 5px; 
+  text-align: center;
+  max-width: 620px;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 480px; 
+}
+
+label[for="email"] {
+  
+  margin-bottom: 5px;
+}
 
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 12rem;
+  background-color: var(--background-color-header);
+  color: var(--header-text-color);
+} 
 /*
 @media (max-width:1200px){
   .featured-section{
