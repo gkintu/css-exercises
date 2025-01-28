@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color-header: #111827;
+  --background-color: #1f2937;
+  --link-text-color: #e5e7eb;
+  --header-text-color: #f9faf8;
+  --button-color: #3882f6;
+  --information-header-text-color: #1f2937;
+  --qoute-background-color: #e5e7eb;
+  --qoute-text-color: #1f2937;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 12rem;   
+    background-color: var(--background-color-header);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-text-color);
+}
+
+.hero-section {
+    display: flex;
+    padding: 5rem 12rem;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--background-color);
+}   
