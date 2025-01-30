@@ -13,8 +13,8 @@
   --header-text-color: #f9faf8;
   --button-color: #3882f6;
   --information-header-text-color: #1f2937;
-  --qoute-background-color: #e5e7eb;
-  --qoute-text-color: #1f2937;
+  --quote-background-color: #e5e7eb;
+  --quote-text-color: #1f2937;
 }
 
 body {
@@ -61,7 +61,7 @@ a {
   margin-bottom: 10px;
 }
 
-.paragraph.hero.hero {
+.paragraph.hero {
   font-size: 18px;
   font-weight: 400;
 }
@@ -87,7 +87,7 @@ input[type="submit"] {
 .hero-image {
   width: 525px;
   height: 235px;
-  border-radius: 5px;
+
   overflow: hidden;
 }
 
@@ -95,6 +95,7 @@ input[type="submit"] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .featured-section {
@@ -132,7 +133,6 @@ input[type="submit"] {
 .featured-listings:hover .listing-details {
   background-color: #e5e6e3;
 }
-
 .featured-listings img {
   width: 100%;
   height: 200px;
@@ -140,14 +140,14 @@ input[type="submit"] {
   object-fit: cover;
 }
 
-.qoute-section {
+.quote-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 36px;
   font-style: italic;
-  background-color: var(--qoute-background-color);
-  color: var(--qoute-text-color);
+  background-color: var(--quote-background-color);
+  color: var(--quote-text-color);
 }
 
 blockquote {
@@ -181,6 +181,7 @@ cite {
 .cta-header {
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 
 .cta-paragraph {
@@ -228,7 +229,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1153px) {
+@media only screen and (max-width: 1154px) {
   .hero-section {
     display: flex;
     flex-direction: column;
@@ -236,7 +237,7 @@ footer {
     padding: 2rem 1rem;
   }
 
-  .hero-image {
+  #hero-img {
     transform: scale(0.98);
   }
 }
@@ -261,33 +262,29 @@ footer {
   }
 }
 
-
 @media only screen and (max-width: 768px) {
- header {
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  font-size: 1.2rem;
-  padding: 2rem 1rem;
- }
+  header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 2rem 1rem;
+  }
 
- .hero-section {
-  padding: 3rem 1rem;
-}
+  .hero-section {
+    padding: 3rem 1rem;
+  }
 
+  .hero-header-text {
+    font-size: 32px;
+  }
 
-.hero-header-text {
-  font-size: 32px;
-}
-
-
-.featured-listings img {
-        height: 280px;
-    }
+  .featured-listings img {
+    height: 280px;
+  }
 }
 
 @media only screen and (max-width: 660px) {
-
   .featured-container {
     flex-direction: column;
     max-width: 380px;
@@ -295,45 +292,127 @@ footer {
 
   .featured-listings img {
     height: 220px;
-}
+  }
 
-.hero-image {
-  transform: scale(0.65);
-}
+  .hero-image {
+    width: 100%;
 
-.cta-header {
-  font-size: 20px;
-}
+    transform: scale(0.9);
+  }
 
-.cta-form {
-  max-width: 380px;
-}
+  #hero-img {
+    object-position: 90% 0%;
+  }
 
+  .cta-header {
+    font-size: 20px;
+  }
 
-.cta-paragraph {
-  font-size: 16px;
-  max-width: 420px;
+  .cta-form {
+    max-width: 380px;
+  }
 
-}
+  .cta-paragraph {
+    font-size: 16px;
+    max-width: 420px;
+  }
 
-.qoute-section {
-  font-size: 24px;
-}
+  .quote-section {
+    font-size: 24px;
+  }
 
-blockquote {
-  max-width: 380px;
-}
+  blockquote {
+    max-width: 380px;
+  }
 
+  footer {
+    padding: 3rem 1rem;
+  }
 }
 
 @media only screen and (max-width: 520px) {
+  .hero-section {
+    padding: 3rem 1rem;
+    width: auto;
+  }
+
   .cta-section {
-    max-width: 320px;
+    width: auto;
     padding: 3rem 1rem;
   }
 
+  .cta-container {
+    width: 320px;
+  }
+
+  .cta-header {
+    text-align: center;
+  }
+
+  .cta-paragraph {
+    font-size: 0.8rem;
+  }
 }
 
+@media only screen and (max-width: 380px) {
+  body {
+    min-width: 320px;
+  }
 
+  .hero-section {
+    width: auto;
+    max-width: 380px;
+  }
+  .hero-container,
+  .hero-image {
+    width: 100%;
+  }
 
- 
+  .hero-header-text {
+    font-size: 24px;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.9);
+  }
+
+  #hero-img {
+    object-position: 90% 0%;
+   
+  }
+
+  blockquote {
+    width: 320px;
+  }
+
+  .quote-section,
+  cite {
+    font-size: 20px;
+  }
+
+  .cta-header {
+    font-size: 18px;
+  }
+
+  .cta-section {
+    width: auto;
+  }
+
+  .cta-header {
+    width: 80%;
+  }
+
+  .cta-paragraph {
+    width: 80%;
+  }
+
+  .cta-form {
+    width: 80%;
+  }
+}

@@ -12,7 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
-<main>
+
+<body>
     <header>
         <a href="/">Find House</a>
         <nav>
@@ -23,85 +24,84 @@
             </ul>
         </nav>
     </header>
-    <section class="hero-section">
-        <div class="hero-container">
-            <h1 class="hero-header-text">Find Your Home Today</h1>
-            <p class="paragraph hero">Search for your next home</p>
-            <form action="">
-                <input type="text" placeholder="Enter your location">
-                <button class="hero-button">Search</button>
-            </form>
-        </div>
-        <div class="hero-image">
-            <!-- From "www.placehold.co") -->
-            <img id="hero-img" src="./images/house-keys.webp" alt="Placeholder Image">
-        </div>
 
-    </section>
+    <main>
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1 class="hero-header-text">Find Your Home Today</h1>
+                <p class="paragraph hero">Search for your next home</p>
+                <form action="">
+                    <input type="text" placeholder="Enter your location">
+                    <button class="hero-button">Search</button>
+                </form>
+            </div>
+            <div class="hero-image">
+                <img id="hero-img" src="./images/house-keys.webp" alt="image of cardboard house with keys 3D">
+            </div>
+        </section>
 
-    <section class="featured-section">
-        <h2 class="featured-listings-header">Featured Listings</h2>
-        <div class="featured-container">
-            <div class="featured-listings">
-                <img src="./images/house-3-New-york.jpg" alt="Placeholder Image">
-                <div class="listing-details">
-                    <h3>3 Bedroom House</h3>
-                    <p>Price: $500,000</p>
-                    <p>Location: New York</p>
+        <section class="featured-section">
+            <h2 class="featured-listings-header">Featured Listings</h2>
+            <div class="featured-container">
+                <div class="featured-listings">
+                    <img src="./images/house-3-New-york.jpg" alt="image of a house in New York">
+                    <div class="listing-details">
+                        <h3>3 Bedroom House</h3>
+                        <p>Price: $500,000</p>
+                        <p>Location: New York</p>
+                    </div>
+                </div>
+                <div class="featured-listings">
+                    <img src="./images/house-4-Los-Angeles.jpg" alt="image of a house in Los Angeles">
+                    <div class="listing-details">
+                        <h3>2 Bedroom House</h3>
+                        <p>Price: $400,000</p>
+                        <p>Location: Los Angeles</p>
+                    </div>
+                </div>
+                <div class="featured-listings">
+                    <img src="./images/house-2-Chicago.jpg" alt="image of a house in Chicago">
+                    <div class="listing-details">
+                        <h3>4 Bedroom House</h3>
+                        <p>Price: $600,000</p>
+                        <p>Location: Chicago</p>
+                    </div>
+                </div>
+                <div class="featured-listings">
+                    <img src="./images/house-1-Wyoming.jpg" alt="image of a house in Wyoming">
+                    <div class="listing-details">
+                        <h3>6 Bedroom House</h3>
+                        <p>Price: $390,000</p>
+                        <p>Location: Wyoming</p>
+                    </div>
                 </div>
             </div>
-            <div class="featured-listings">
-                <img src="./images/house-4-Los-Angeles.jpg" alt="Placeholder Image">
-                <div class="listing-details">
-                    <h3>2 Bedroom House</h3>
-                    <p>Price: $400,000</p>
-                    <p>Location: Los Angeles</p>
-                </div>
+        </section>
+
+        <section class="quote-section">
+            <blockquote>
+                <p>“Home is where love resides, memories are created, <br>and family always belongs.”</p>
+                <cite>Unknown</cite>
+            </blockquote>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-header">Get the Latest Property Deals Straight to Your Inbox!</h2>
+                <p class="cta-paragraph">Be the first to know about new listings, price drops, and exclusive offers in your
+                    area. Join thousands of savvy homebuyers today</p>
+                <form class="cta-form" action="">
+                    <label for="email"> Enter your email:</label>
+                    <input type="email" id="email">
+                    <input type="submit" value="Subscribe">
+                </form>
             </div>
-            <div class="featured-listings">
-                <img src="./images/house-2-Chicago.jpg" alt="Placeholder Image">
-                <div class="listing-details">
-                    <h3>4 Bedroom House</h3>
-                    <p>Price: $600,000</p>
-                    <p>Location: Chicago</p>
-                </div>
-            </div>
-            <div class="featured-listings">
-                <img src="./images/house-1-Wyoming.jpg" alt="Placeholder Image">
-                <div class="listing-details">
-                    <h3>6 Bedroom House</h3>
-                    <p>Price: $390,000</p>
-                    <p>Location: Wyoming</p>
-                </div>
-            </div>
-        </div>
+        </section>
+    </main>
 
-    </section>
-
-    <section class="qoute-section">
-        <blockquote>
-            <p>“Home is where love resides, memories are created, <br>and family always belongs.”</p>
-            <cite>Unknown</cite>
-    </section>
-
-    <section class="cta-section">
-        <div class="cta-container">
-            <h2 class="cta-header">Get the Latest Property Deals Straight to Your Inbox!</h2>
-            <p class="cta-paragraph">Be the first to know about new listings, price drops, and exclusive offers in your
-                area. Join thousands of savvy homebuyers today</p>
-            <form class="cta-form" action="">
-                <label for="email"> Enter your email:</label>
-                <input type="email" id="email">
-                <input type="submit" value="Subscribe">
-            </form>
-        </div>
-
-
-
-    </section>
-</main>
-<footer>
-    <p>&copy; 2025 Find House</p>
-</footer> 
+    <footer>
+        <p>&copy; 2025 Find House</p>
+    </footer>
+</body>
 
 </html>
