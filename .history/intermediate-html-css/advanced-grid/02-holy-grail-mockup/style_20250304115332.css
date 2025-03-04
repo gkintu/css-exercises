@@ -34,7 +34,7 @@
 
 .menu {
   grid-column: 2 / 3;
- 
+  
 }
 
 .menu ul {
@@ -123,7 +123,7 @@
   font-size: 18px;
   font-family: sans-serif;
   color: white;
-  
+  text-align: left;
   padding:2px;
 }
 

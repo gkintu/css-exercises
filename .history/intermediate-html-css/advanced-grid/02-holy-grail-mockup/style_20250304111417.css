@@ -23,18 +23,12 @@
   background-color: #393f4d;
   display: grid;
   grid-column: 1 / 3;
-  
+  grid-template-columns: 1fr 4fr;
   align-items: center;
-  
-}
-
-.logo {
-  justify-self: start;
 }
 
 .menu {
   grid-column: 2 / 3;
- 
 }
 
 .menu ul {
@@ -116,15 +110,14 @@
 
 .card {
   height: 200px;
-  
+  padding: 15px;
 }
 
 .article p {
   font-size: 18px;
   font-family: sans-serif;
   color: white;
-  
-  padding:2px;
+  text-align: left;
 }
 
 .article .card {
@@ -137,7 +130,6 @@
   color: black;
   font-weight: normal;
   font-size: 14px;
-  padding: 5px;
 }
 
 .card .title {
